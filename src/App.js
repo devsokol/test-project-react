@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Frame from './components/Frame';
+import Point from './components/Point';
+import SupportPlaceholder from './components/SupportPlaceholder';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 
   render() {
    return (
     <div>
-      <Frame></Frame>
+      <div className="mainContent">
+        <Router>
+          <Switch>
+              <Route path="/">
+                <Point />
+              </Route>
+            </Switch>
+        </Router>
+      </div>
+      <div className="notSupport">
+        <SupportPlaceholder></SupportPlaceholder>
+      </div>
     </div>
    );
   }
