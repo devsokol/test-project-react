@@ -1,5 +1,7 @@
 {
-    "fruit": "Apple",
-    "size": "Large",
-    "color": "Red"
-}
+    "en": {
+      "translation": {
+        "test_message": "This is a test message"
+      }
+    }
+  }
